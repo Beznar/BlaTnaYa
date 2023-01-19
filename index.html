@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>StopAnatomy</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+			<span>BlaTnaYa</span>
+		</div>
+		<div id="about">
+			<a href="#" title="Можливості" onclick="slowScroll('#main')">Можливості</a>
+			<a href="#" title="Переваги" onclick="slowScroll('#overiew')">Переваги</a>
+			<a href="#" title="Контакти" onclick="slowScroll('#contacts')">Контакти</a>
+			<a href="#" title="Відповіді та питання" onclick="slowScroll('#faq')">FAQ</a>
+		</div>
+	</header>
+	<div id="top">
+		<h1>Nastuusia</h1>
+		<h3>як суть життя!</h3>
+	</div>
+
+	<div id="main">
+		<div class="intro">
+			<h2>Коротка Біографія</h2>
+			<span>ТУТ МАЄ БУТИ БІОГРАФІЯ, НО Я НЕ ЗНАЮ ЇЇ. Тому тут буде віршик.</span>
+		</div>
+		<div class="text">
+			<span> І все на світі треба пережити,
+				І кожен фініш – це, по суті, старт,
+				І наперед не треба ворожити,
+				І за минулим плакати не варт.
+				Тож веселімось, людоньки, на людях,
+				Хай меле млин свою одвічну дерть.
+				Застряло серце, мов осколок в грудях,
+				Нічого, все це вилікує смерть.</span>
+		</div>
+	</div>
+
+	<div id="overviev">
+		<h2>Переваги</h2>
+		<h4>Генератор позитива</h4>
+
+		<div class="img">
+			<img src="/Users/beznar/Desktop/sayt/Blatnaya/img/cake.JPG" alt="">
+			<span>Має здібності шеф кухара</span>
+		</div>
+		<div class="img">
+			<img src="/Users/beznar/Desktop/sayt/Blatnaya/IMG_3792.jpg" alt="">
+			<span>Це що Пабло Пікассо?</span>
+		</div>
+		<div class="img">
+			<img src="/Users/beznar/Desktop/sayt/Blatnaya/img/Star.JPG" alt="">
+			<span>Піднімає людям настрій</span>
+		</div>
+		<div class="img">
+			<img src="/Users/beznar/Desktop/sayt/Blatnaya/img/Liver.JPG" alt="">
+			<span>Шпарить Анатомію</span>
+		</div>
+	</div>
+	<div id="contacts">
+		<center>
+			<h5>Зворотній звʼязок</h5>
+		</center>
+		<form id="form_input">
+			<label for="name">Імʼя <span>*</span></label><br>
+			<input type="text" placeholder="Введіть імʼя" name="name" id="name">
+			<label for="email">Ваша пошта <span>*</span></label><br>
+			<input type="email" placeholder="Введіть email" name="email" id="email">
+			<label for="massage">Повідомлення <span>*</span></label><br>
+			<textarea placeholder="Введіть Ваше повідомлення" name="massage" id="massage"></textarea><br>
+			<div id="mess_send" class="btn">Надіслати</div>
+		</form>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script>
+		function slowScroll(id) {
+			$('html, body').animate({
+				scrollTop: $(id).offset().top
+			}, 500);
+		}
+
+		$(document).on("scroll", function () {
+			if ($(window).scrollTop() === 0)
+				$("header").removeClass("fixed");
+			else
+				$("header").attr("class", "fixed");
+		})
+	</script>
+</body>
+
+</html>
