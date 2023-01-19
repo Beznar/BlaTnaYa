@@ -92,7 +92,7 @@ header.fixed #logo {
 #top {
 	width: 100%;
 
-	background-image: url(/Users/beznar/Desktop/sayt/Blatnaya/img/IMG_3786.jpg);
+	background-image: url(https://github.com/Beznar/BlaTnaYa/blob/main/img/IMG_3786.jpg?raw=true);
 	background-blend-mode: multiply;
 	background-color: #2e3a44;
 	background-size: cover;
