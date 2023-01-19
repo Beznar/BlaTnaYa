@@ -177,7 +177,7 @@ header.fixed #logo {
 
 #overviev {
 	float: left;
-	background-image: url(/Users/beznar/Desktop/sayt/Blatnaya/img/IMG_3791.jpg);
+	background-image: url(https://github.com/Beznar/BlaTnaYa/blob/main/img/IMG_3791.jpg?raw=true);
 	background-blend-mode: multiply;
 	background-color: #4f1c75;
 	background-size: cover;
